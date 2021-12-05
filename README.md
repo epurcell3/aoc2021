@@ -17,3 +17,8 @@ awk -f input-scripts/list.awk inputs/day03.txt | jq -f day03-2.jq
 awk -f input-scripts/bingo.awk inputs/day04.txt | jq -f day04-1.jq
 
 awk -f input-scripts/bingo.awk inputs/day04.txt | jq -f day04-2.jq
+
+# Day 5
+awk -f input-scripts/list.awk inputs/day05.txt | jq -f day05-1.jq
+
+awk -f input-scripts/list.awk inputs/day05.txt | jq -f day05-2.jq
