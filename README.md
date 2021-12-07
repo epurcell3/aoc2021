@@ -24,6 +24,11 @@ awk -f input-scripts/list.awk inputs/day05.txt | jq -f day05-1.jq
 awk -f input-scripts/list.awk inputs/day05.txt | jq -f day05-2.jq
 
 # Day 6
-awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day06-example.txt | jq -f day06-1.jq
+awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day06.txt | jq -f day06-1.jq
 
-awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day06-example.txt | jq -f day06-2.jq
+awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day06.txt | jq -f day06-2.jq
+
+# Day 7
+awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day07.txt | jq -f day07-1.jq
+
+awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day07.txt | jq -f day07-2.jq
