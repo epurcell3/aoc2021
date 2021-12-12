@@ -42,3 +42,18 @@ awk -f input-scripts/list.awk inputs/day08.txt | jq -f day08-2.jq
 awk -f input-scripts/list.awk inputs/day09.txt | jq -f day09-1.jq
 
 awk -f input-scripts/list.awk inputs/day09.txt | jq -f day09-2.jq
+
+# Day 10
+awk -f input-scripts/list.awk inputs/day10.txt | jq -f day10-1.jq
+
+awk -f input-scripts/list.awk inputs/day10.txt | jq -f day10-2.jq
+
+# Day 11
+awk -f input-scripts/list.awk inputs/day11.txt | jq -f day11-1.jq
+
+awk -f input-scripts/list.awk inputs/day11.txt | jq -f day11-2.jq
+
+# Day 12
+awk -f input-scripts/list.awk inputs/day12.txt | jq -f day12-1.jq
+
+awk -f input-scripts/list.awk inputs/day12.txt | jq -f day12-2.jq
