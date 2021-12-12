@@ -37,3 +37,8 @@ awk -v RS="," -v TYPE="number" -f input-scripts/list.awk inputs/day07.txt | jq -
 awk -f input-scripts/list.awk inputs/day08.txt | jq -f day08-1.jq
 
 awk -f input-scripts/list.awk inputs/day08.txt | jq -f day08-2.jq
+
+# Day 9
+awk -f input-scripts/list.awk inputs/day09.txt | jq -f day09-1.jq
+
+awk -f input-scripts/list.awk inputs/day09.txt | jq -f day09-2.jq
