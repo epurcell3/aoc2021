@@ -66,3 +66,6 @@ awk -f input-scripts/list.awk inputs/day14.txt | jq -f day14-take2.jq
 
 # Day 15 - Takes forever, but it does run (in 2 hours)
 awk -f input-scripts/list.awk inputs/day15.txt | jq -f day15.jq
+
+# Day 16 - Unexpected lisp in jq
+awk -f input-scripts/list.awk inputs/day16.txt | jq -f day16.jq
