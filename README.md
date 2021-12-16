@@ -64,5 +64,5 @@ awk -f input-scripts/list.awk inputs/day13.txt | jq -f day13.jq
 # Day 14 - No more brute forcing
 awk -f input-scripts/list.awk inputs/day14.txt | jq -f day14-take2.jq
 
-
-
+# Day 15 - Takes forever, but it does run (in 2 hours)
+awk -f input-scripts/list.awk inputs/day15.txt | jq -f day15.jq
