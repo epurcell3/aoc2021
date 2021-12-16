@@ -60,3 +60,9 @@ awk -f input-scripts/list.awk inputs/day12.txt | jq -f day12-2.jq
 
 # Day 13
 awk -f input-scripts/list.awk inputs/day13.txt | jq -f day13.jq
+
+# Day 14 - No more brute forcing
+awk -f input-scripts/list.awk inputs/day14.txt | jq -f day14-take2.jq
+
+
+
