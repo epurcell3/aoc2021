@@ -30,7 +30,8 @@ def parse_packets($path):
 			setpath($path + ["parsing"]; .data[.index] == 1) |
 			setpath($path + ["value"]; getpath($path + ["value"]) + .data[.index + 1:.index + 5]) |
 			.index += 5
-		) | setpath($path + ["value"]; getpath($path + ["value"]) | bin_to_num);
+		) | setpath($path + ["value"]; getpath($path + ["value"]) | bin_to_num) |
+		delpaths([$path + ["parsing"]]);
 	def _parse_op_length: setpath($path + ["length_type"]; if .data[.index] == 0 then "bits" else "packets" end) |
 	# 16 and 12 due to exclusive upper bounds
 		setpath($path + ["length"]; .data[.index + 1:.index + if getpath($path + ["length_type"]) == "bits" then 16 else 12 end] | bin_to_num) |
@@ -53,7 +54,7 @@ def parse_packets($path):
 				end
 			)
 		)
-	)
+	) | delpaths(["length", "length_type", "remaining"] | map($path + [.]))
 	end;
 
 		
